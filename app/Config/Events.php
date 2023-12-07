@@ -52,4 +52,7 @@ Events::on('pre_system', static function () {
             });
         }
     }
+
+	// service inject start here
+	service('eloquent');
 });

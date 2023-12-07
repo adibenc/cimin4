@@ -91,3 +91,9 @@ if (!function_exists('stisla')) {
         return config('view.ui.template').$file;
     }
 }
+
+if (!function_exists('logs')) {
+    function logs($cn) {
+        return log_message(7, $cn);
+    }
+}
