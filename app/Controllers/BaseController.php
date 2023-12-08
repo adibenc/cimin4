@@ -36,6 +36,8 @@ abstract class BaseController extends Controller
      * @var array
      */
     protected $helpers = [];
+    
+	protected $db = null;
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -52,6 +54,7 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
+		$this->db = \Config\Database::connect();
 
         // E.g.: $this->session = \Config\Services::session();
     }

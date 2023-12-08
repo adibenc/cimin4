@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\User;
 use CodeIgniter\Log\Logger;
+// use Illuminate\Support\Facades\DB;
 
 class D1Controller extends JsonCrudController{
 	public function index(): string {

@@ -13,3 +13,5 @@ $routes->get('/d1/show', 'D1Controller::show');
 $routes->get('/d1/create', 'D1Controller::create');
 $routes->get('/d1/update/(:id)', 'D1Controller::update');
 $routes->get('/d1/delete/(:id)', 'D1Controller::delete');
+
+service('auth')->routes($routes);

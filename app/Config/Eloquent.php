@@ -21,7 +21,6 @@ class Eloquent {
 		]);
 
 		$capsule->setAsGlobal();
-
 		$capsule->bootEloquent();
 	}
 }
